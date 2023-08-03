@@ -1,3 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 :root {
   --primary-font: "Roboto", sans-serif;
   --link-logo-font: "Raleway", sans-serif;
@@ -14,10 +49,13 @@ body {
   font-style: normal;
   background-color: #fff;
   color: var(--primary-slate-color);
+  margin: 0;
 }
 
 .list {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 button {
   cursor: pointer;
@@ -74,6 +112,11 @@ a span {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .hero-button {
   font-family: inherit;
@@ -83,6 +126,11 @@ a span {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  min-width: 169;
+  padding: 16px 32px;
+  border: 1px solid #404bbf;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -169,4 +217,12 @@ a span {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+h3 {
+  margin-top: 0 auto;
+  margin-bottom: 8px;
+}
+h2 {
+  margin-top: 0 auto;
+  margin-bottom: 72px;
 }
