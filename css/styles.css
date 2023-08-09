@@ -62,7 +62,9 @@ body {
 button {
   cursor: pointer;
 }
-
+.navigation {
+  align-items: center;
+}
 .link-contacts {
   color: var(--primary-navyblue-color);
   font-size: 16px;
@@ -288,6 +290,9 @@ header {
   display: flex;
   gap: 24px;
 }
+.list-section-one {
+  width: calc((100% - 72px) / 4);
+}
 .advantages-text {
   margin-right: 8px;
 }
@@ -360,6 +365,7 @@ footer {
   align-items: stretch;
   column-gap: 24px;
   row-gap: 48px;
+  border-top: none;
   padding: 32px 16px;
   border-top: none;
 }
